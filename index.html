@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Video</title>
+
+<style>
+body{
+    margin:0;
+    background:#000;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    overflow:hidden;
+    font-family:Arial;
+}
+
+.container{
+    position:relative;
+    width:100%;
+    max-width:420px;
+}
+
+video{
+    width:100%;
+    border-radius:12px;
+}
+
+.play-button{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:80px;
+    height:80px;
+    background:rgba(255,255,255,0.85);
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+}
+
+.play-button:after{
+    content:'';
+    border-left:25px solid black;
+    border-top:15px solid transparent;
+    border-bottom:15px solid transparent;
+    margin-left:5px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<video id="myVideo" poster="https://i.imgur.com/8Km9tLL.jpeg">
+    <source src="https://files.catbox.moe/2qm00q.mp4" type="video/mp4">
+</video>
+
+<div class="play-button" onclick="redirectShopee()"></div>
+
+</div>
+
+<script>
+function redirectShopee() {
+
+window.location.href = "https://s.shopee.co.id/9paumE2IG9";
+
+}
+</script>
+
+</body>
+</html>
